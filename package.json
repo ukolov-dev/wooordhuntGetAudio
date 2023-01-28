@@ -1,0 +1,23 @@
+{
+  "name": "wooordhuntgetaudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukolov-dev/wooordhuntGetAudio.git"
+  },
+  "author": "SI.Ukolov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ukolov-dev/wooordhuntGetAudio/issues"
+  },
+  "homepage": "https://github.com/ukolov-dev/wooordhuntGetAudio#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "prettier": "2.8.3"
+  }
+}
