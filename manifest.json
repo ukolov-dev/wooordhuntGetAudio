@@ -6,5 +6,12 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": "img.png"
-  }
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions":["<all_urls>"]
+
+
 }
