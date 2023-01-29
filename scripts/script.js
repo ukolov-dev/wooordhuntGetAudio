@@ -1,5 +1,3 @@
-console.log('start')
-
 function download() {
     const elemAudio = document.getElementById('audio_us')
     const elemSrc = elemAudio.children[0]
@@ -21,7 +19,6 @@ function download() {
 }
 
 chrome.tabs.query({ active: true }, function (tabs) {
-    console.log(tabs)
     let tab = tabs[0]
     chrome.scripting
         .executeScript({
