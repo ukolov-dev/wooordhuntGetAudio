@@ -12,18 +12,17 @@ function download() {
         a.style.display = 'none'
         document.body.appendChild(a)
         a.click()
-        delete a
     }
     xhr.open('GET', url)
     xhr.send()
 }
 
-chrome.tabs.query({ active: true }, function (tabs) {
-    let tab = tabs[0]
-    chrome.scripting
-        .executeScript({
-            target: { tabId: tab.id },
-            function: download,
-        })
-        .then((e) => console.log('script injected', e))
-})
+// chrome.tabs.query({ active: true }, function (tabs) {
+//     let tab = tabs[0]
+//     chrome.scripting
+//         .executeScript({
+//             target: { tabId: tab.id },
+//             function: download,
+//         })
+//         .then((e) => console.log('script injected', e))
+// })
