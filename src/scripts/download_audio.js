@@ -1,5 +1,7 @@
+
 function download() {
-    const elemAudio = document.getElementById('audio_us')
+    const elemAudio = document.getElementById('audio_us') // audio_uk
+    console.log('elemAudio',elemAudio)
     const elemSrc = elemAudio.children[0]
     const url = elemSrc.getAttribute('src')
     const filename = url.substring(url.lastIndexOf('/') + 1).split('?')[0]
@@ -17,12 +19,4 @@ function download() {
     xhr.send()
 }
 
-// chrome.tabs.query({ active: true }, function (tabs) {
-//     let tab = tabs[0]
-//     chrome.scripting
-//         .executeScript({
-//             target: { tabId: tab.id },
-//             function: download,
-//         })
-//         .then((e) => console.log('script injected', e))
-// })
+download();
