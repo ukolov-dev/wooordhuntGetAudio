@@ -1,7 +1,5 @@
-
 function download() {
     const elemAudio = document.getElementById('audio_us') // audio_uk
-    console.log('elemAudio',elemAudio)
     const elemSrc = elemAudio.children[0]
     const url = elemSrc.getAttribute('src')
     const filename = url.substring(url.lastIndexOf('/') + 1).split('?')[0]
